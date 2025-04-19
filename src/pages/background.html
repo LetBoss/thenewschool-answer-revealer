@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Настройки Answer Revealer</title>
+  <link rel="stylesheet" href="../style/background.css">
+</head>
+<body>
+<h1>Настройки отображения ответов</h1>
+
+<div class="settings-section">
+  <h2>Основные настройки</h2>
+  <div class="setting-item">
+    <label for="auto-show">Автоматически показывать ответы</label>
+    <label class="toggle">
+      <input type="checkbox" id="auto-show">
+      <span class="slider"></span>
+    </label>
+  </div>
+</div>
+
+<div class="settings-section">
+  <h2>Стиль отображения</h2>
+  <div class="setting-item multi-line">
+    <label>Размер шрифта</label>
+    <div class="slider-container">
+      <input type="range" id="font-size" min="12" max="24" step="1" value="16">
+      <span class="slider-value">16</span>
+      <span>px</span>
+    </div>
+  </div>
+</div>
+
+<div class="bottom-bar">
+  <p>thenewschool-revealer-extension</p>
+  <a href="https://github.com/LetBoss/thenewschool-answer-revealer" target="_blank">
+    <img src="../icons/github-icon.png" alt="GitHub" class="icon">
+    <span>GitHub</span>
+  </a>
+</div>
+
+<script src="../js/popup.js"></script>
+</body>
+</html>

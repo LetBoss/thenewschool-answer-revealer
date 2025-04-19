@@ -1,0 +1,21 @@
+{
+  "manifest_version": 3,
+  "name": "Answer Revealer",
+  "version": "1.0",
+  "permissions": ["storage", "activeTab", "scripting"],
+  "host_permissions": ["*://thenewschool.ru/*"],
+  "action": {
+    "default_popup": "pages/background.html"
+  },
+  "background": {
+    "service_worker": "js/background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["*://thenewschool.ru/*"],
+      "js": ["js/content.js"],
+      "run_at": "document_end",
+      "all_frames": false
+    }
+  ]
+}
